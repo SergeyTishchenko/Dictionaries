@@ -16,4 +16,4 @@ if __name__ == '__main__':
     dic = solar_system()
     planet = random.choice(dic.keys())
     distance = dic.get(planet)
-    print "Planet {name} is about {dist} mln km from the Sun".format(name=str(planet), dist=str(distance))
+    print "Planet {name} is about {dist} million kilometers from the sun".format(name=str(planet), dist=str(distance))
