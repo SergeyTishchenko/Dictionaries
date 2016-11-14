@@ -11,6 +11,7 @@ def solar_system():
 
 
 if __name__ == '__main__':
-    dic = solar_system()
-    for planet, distance in sorted(dic.items(), None, key = lambda i:(i[1])):
-        print "Planet {name} is about {dist} millionln kilometers from the sun".format(name=str(planet), dist=str(distance))
+    sorted_by_distance = sorted(solar_system().items(), key=operator.itemgetter(1))
+    print "Sorted by distance:"
+    for x, y in sorted_by_distance:
+        print "Planet {0} is located at {1} million kilometers from the sun".format(x, y)
